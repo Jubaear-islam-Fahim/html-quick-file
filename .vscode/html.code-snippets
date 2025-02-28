@@ -1,28 +1,36 @@
 {
-  "First html Start": {
-    "prefix": "start",
-    "scope": "html",
-    "body": [
-      "<!--==========================  ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Section Start  ==========================-->",
-      "<section class=\"${2:${TM_FILENAME_BASE/^_(.)/${1:/downcase}/}}-section ${3}\">",
-      "  <div class=\"container\">",
-      "    <div class=\"row\">",
-      "        $0",
-      "    </div>",
-      "  </div>",
-      "</section>",
-      "<!--==========================  ${1} Section End  ==========================-->"
-    ],
-    "description": "Creates a section with container and row"
-  },
+  "First HTML Start": {
+  "prefix": "start",
+  "scope": "html",
+  "body": [
+    "<!--======================================================",
+    " --------- ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Section --------- ",
+    "=======================================================-->",
+    "<section class=\"${2:${TM_FILENAME_BASE/^_(.)/${1:/downcase}/}}-section ${3}\">",
+    "  <div class=\"container\">",
+    "    <div class=\"row\">",
+    "      $0",
+    "    </div>",
+    "  </div>",
+    "</section>",
+    "<!--======================================================",
+    " --------- End ${1} Section --------- ",
+    "=======================================================-->"
+  ],
+  "description": "Creates a section with container and row"
+},
 
   "Comment Create": {
     "prefix": "comment",
     "scope": "html",
     "body": [
-      "<!--==========================   ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Start  ==========================-->",
+    "<!--======================================================",
+    " --------- ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} --------- ",
+    "=======================================================-->", 
       "${0}",
-      "<!--==========================  ${1} End  ==========================-->"
+    "<!--======================================================",
+    " --------- End ${1} --------- ",
+    "=======================================================-->"
     ],
     "description": "Html Comment Start And End"
   },

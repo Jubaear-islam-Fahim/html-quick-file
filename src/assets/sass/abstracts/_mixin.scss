@@ -1,4 +1,7 @@
-//* ============================ Media Breakpoint for Each Device Start ============================ */
+/* ===============================================
+---------- Media Breakpoint for Each Device ----------
+=================================================*/
+
 //Mobile Landscape
 @mixin landscape {
   @media all and (orientation: landscape) {
@@ -73,9 +76,16 @@
     @content;
   }
 }
-// ============================ Media Breakpoint for Each Device End ============================
 
-// ================================== Font Size For responsive devices Start ===============================+
+@mixin img-content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===============================================
+---------- Font Size For responsive devices Css ----------
+=================================================*/
 
 @mixin fs-10 {
   font-size: 0.625rem;
@@ -170,4 +180,3 @@
 @mixin fs-40 {
   font-size: 2.5rem;
 }
-//* ================================== Font Size For responsive devices End =============================== */

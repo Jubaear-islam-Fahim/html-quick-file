@@ -1,4 +1,7 @@
-/* ================================= Form Css Start =========================== */
+/* ===============================================
+---------- Form Css ----------
+=================================================*/
+
 /* Form Label */
 .form--label {
   margin-bottom: 6px;
@@ -276,11 +279,9 @@ input[type='number'] {
     padding-left: 5px;
     cursor: pointer;
   }
-}
-/*  Custom Switch End Design */
-/* ================================= Form Css End =========================== */
+} 
 
-/* --======================Custom Input group Start ======================*/
+/* Custom Input group  */
 
 .input--group {
   border-radius: 5px;
@@ -321,5 +322,4 @@ input[type='number'] {
   &:has(.form--control[readonly]):focus-within {
     border-color: hsl(var(--black) / 0.4) !important;
   }
-}
-/* --======================Custom Input group End ======================*/
+} 

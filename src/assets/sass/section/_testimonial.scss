@@ -1,0 +1,61 @@
+/* ===============================================
+---------- Testimonial Section ----------
+=================================================*/
+.arrow-btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  button {
+    background: hsl(var(--white) / 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    color: hsl(var(--white));
+  }
+}
+
+.testimonial-slide {
+  border: 2px solid hsl(var(--border-color) / 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  background: hsl(var(--base) / 0.01);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &__item {
+    position: relative;
+    &::before {
+      content: "\f10e";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 40px;
+      opacity: .3;
+    }
+    p {
+      border-bottom: 1px solid hsl(var(--white) / 0.1);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        object-fit: cover;
+      }
+      h5 {
+        margin-bottom: 0;
+      }
+      span {
+        @include fs-14;
+      }
+    }
+  }
+}

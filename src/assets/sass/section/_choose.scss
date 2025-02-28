@@ -1,0 +1,65 @@
+/* ===============================================
+---------- Choose Section ----------
+=================================================*/
+.choose-section {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    background-color: hsl(var(--info));
+    position: absolute;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    filter: blur(12.5rem);
+    opacity: 0.4;
+    z-index: -3;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+  }
+}
+
+.choose-item {
+  border: 2px solid hsl(var(--border-color) / 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(21, 21, 35, 0.25);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &:hover {
+    &::before {
+      width: 25%;
+      height: 25%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: hsl(var(--base));
+    filter: blur(9rem);
+    transition: all 0.6s;
+  } 
+
+  .icon {
+    background: hsl(var(--black) / 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid hsl(var(--border-color) / 0.1);
+    margin-bottom: 35px;
+  }
+  i {
+    font-size: 30px;
+    line-height: 1;
+  }
+}

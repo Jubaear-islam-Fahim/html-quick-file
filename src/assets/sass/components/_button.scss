@@ -1,4 +1,7 @@
-/* ================================= Button Css Start =========================== */
+/* ===============================================
+---------- Button Css ----------
+=================================================*/
+
 .btn-check:checked + .btn,
 .btn.active,
 .btn.show,
@@ -63,16 +66,26 @@
     line-height: 35px;
     @include fs-15;
     padding: 0;
+  } 
+  &--border{
+    text-transform: capitalize;
+    &::before {
+      content:"";
+      position: absolute;
+      inset: 0;
+      padding: rem(1px);
+      background: var(--base-gradient);
+      border-radius: inherit;
+      --m:conic-gradient(#000 0 0);
+      mask: var(--m) content-box exclude,var(--m); 
+      border-radius: 8px
+    }
   }
-  // ============= Gradient Button Start =======================
-  @include gradient-btn(--base, --base, --base-two, 90deg);
-  // ============= Gradient Button End =======================
-  // ============= Different Color Button Start ==================
+  @include gradient-btn(--base, --base, --base-two, 90deg); 
   // @include btn-style(--base);
   @include btn-style(--primary);
   @include btn-style(--secondary);
   @include btn-style(--danger);
   @include btn-style(--warning);
   @include btn-style(--info);
-}
-/* ================================= Button Css End =========================== */
+} 

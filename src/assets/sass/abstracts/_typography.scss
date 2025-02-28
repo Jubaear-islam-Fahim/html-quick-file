@@ -1,4 +1,7 @@
-/* ================================= Common Typography Css Start =========================== */
+/* ===============================================
+---------- Typography Css ----------
+=================================================*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +11,11 @@ body {
   font-family: var(--body-font);
   color: hsl(var(--body-color));
   word-break: break-word;
-  background-color: var(--background-color);
+  background-color: hsl(var(--body-bg));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden
 }
 p {
   @include fs-16;
@@ -39,25 +43,19 @@ h6 {
   }
 }
 h1 {
-  font-size: rem(60px);
+  font-size: rem(70px);
   @include xl-screen {
-    font-size: rem(50px);
+    font-size: rem(60px);
   }
   @include lg-screen {
     font-size: rem(45px);
   }
   @include md-screen {
     font-size: rem(40px);
-  }
-  @include sm-screen {
-    font-size: rem(35px);
-  }
-  @include msm-screen {
-    font-size: rem(30px);
-  }
+  } 
 }
 h2 {
-  font-size: rem(40px);
+  font-size: rem(46px);
   @include xl-screen {
     font-size: rem(45px);
   }
@@ -69,13 +67,10 @@ h2 {
   }
   @include sm-screen {
     font-size: rem(30px);
-  }
-  @include msm-screen {
-    font-size: rem(25px);
-  }
+  } 
 }
 h3 {
-  font-size: rem(30px);
+  font-size: rem(36px);
   @include xl-screen {
     font-size: rem(28px);
   }
@@ -203,5 +198,4 @@ button {
   h6 {
     font-family: var(--body-font);
   }
-}
-/* ================================= Common Typography Css End =========================== */
+} 

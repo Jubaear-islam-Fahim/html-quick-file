@@ -29,11 +29,12 @@
     "prefix": "start",
     "scope": "scss",
     "body": [
-      "/* ======================  ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Section Start  ======================*/",
-      ".${2:${TM_FILENAME_BASE/^_(.)/${1:/downcase}/}}{",
+      "/* ===============================================",
+      "---------- ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Section ----------",
+      "=================================================*/",
+      ".${2:${TM_FILENAME_BASE/^_(.)/${1:/downcase}/}}-section{",
       "${0}",
-      "}",
-      "/* ======================  ${1} Section End  ======================*/"
+      "}", 
     ],
     "description": "Creates a section with container and row"
   },
@@ -41,9 +42,19 @@
     "prefix": "comment",
     "scope": "scss",
     "body": [
-      "/* ======================  ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Start  ======================*/",
-      "${0}",
-      "/* ======================  ${1} End  ======================*/"
+      "/* ===============================================",
+      "---------- ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Css ----------",
+      "=================================================*/", 
+      "${0}", 
+    ],
+    "description": "Scss Comment Start and End"
+  },
+  "Scss Comment Start two": {
+    "prefix": "comment-tow",
+    "scope": "scss",
+    "body": [
+      "/* ---------- ${1:${TM_FILENAME_BASE/^_(.)/${1:/capitalize}/}} Css ---------- */", 
+      "${0}", 
     ],
     "description": "Scss Comment Start and End"
   }

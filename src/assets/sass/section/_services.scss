@@ -1,0 +1,112 @@
+/* ===============================================
+---------- Services Section ----------
+=================================================*/
+.services-section {
+  .services-content {
+    display: grid;
+    gap: 50px;
+  }
+  .services-content-item {
+    border-radius: 10px;
+    padding: 70px;
+    position: sticky;
+    top: 80px;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid hsl(var(--border-color) / 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(21, 21, 35, 0.95);
+    backdrop-filter: blur(10px);
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); 
+      width: 44%;
+      height: 200px;
+      background-color: hsl(var(--info));
+      filter: blur(9rem);
+      transition: all 0.6s;
+      opacity: .3;
+    }
+
+    &:nth-child(1) {
+      .section__title__sub{
+        color: hsl(var(--success));
+        background: hsl(var(--success)/0.08);
+      }
+    }
+    &:nth-child(2) {
+      top: 120px;
+      .section__title__sub{
+        color: hsl(var(--warning));
+        background: hsl(var(--warning)/0.08);
+      }
+    }
+    &:nth-child(3) {
+      top: 160px;
+      .section__title__sub{
+        color: hsl(var(--danger));
+        background: hsl(var(--danger)/0.08);
+      }
+    }
+    &:nth-child(4) {
+      top: 200px;
+      .section__title__sub{
+        color: hsl(var(--base));
+        background: hsl(var(--base)/0.08);
+      }
+    }
+    &:nth-child(5) {
+      top: 240px;
+      .section__title__sub{
+        color: hsl(var(--info));
+        background: hsl(var(--info)/0.08);
+      }
+    }
+    &:nth-child(6) {
+      top: 280px;
+      .section__title__sub{
+        color: hsl(var(--yellow));
+        background: hsl(var(--yellow)/0.08);
+      }
+    }
+    &:nth-child(odd) {
+      .order-lg-1 {
+        order: 0 !important;
+      }
+    }
+    .services-list {
+      display: grid;
+      gap: 30px;
+      margin-top: 50px;
+      li {
+        @include fs-18;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        z-index: 1;
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        &::before {
+          content: "\f14a";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 400;
+        }
+        &::after {
+          content: url(../images/shape/line.svg);
+          position: absolute;
+          left: 7px;
+          top: 4px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

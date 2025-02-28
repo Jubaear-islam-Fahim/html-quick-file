@@ -4,7 +4,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* ============================= Display Flex Css Start ============================= */
+/* Display Flex Css */ 
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -25,10 +25,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-/* ============================= Display Flex Css End ============================= */
+} 
 
-/* ============================= Positioning Css Class Start ===================== */
+
+/* Positioning Css Class */
 .pa-extend {
   position: absolute;
   content: '';
@@ -45,10 +45,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-/* ============================= Positioning Css Class End ===================== */
+} 
 
-/* ===================== Font Size For responsive devices Start =================== */
+/* Font Size For responsive devices */
 .fs-10 {
   @include fs-10;
 }
@@ -99,5 +98,4 @@
   @include sm-screen {
     @include fs-17;
   }
-}
-/* ===================== Font Size For responsive devices End =================== */
+} 

@@ -1,5 +1,3 @@
-<!-- meta tags and other links -->
-<!-- Header -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,299 +6,664 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title -->
-  <title> Html Template</title>
+  <title>AdsHunt - Ad Network Solutions for Advertisers & Publishers</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/logo/favicon.png">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Fontasosome -->
-  <link rel="stylesheet" href="assets/css/fontasosome.min.css">
-  <!-- Slick -->
-  <link rel="stylesheet" href="assets/css/slick.css">
-  <!-- line awesome -->
-  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css"> 
   <!-- Odometer -->
   <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Custom Animation -->
+  <link rel="stylesheet" href="assets/css/custom-animation.css">
   <!-- Main css -->
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-  <!--==================== Preloader Start ====================-->
-<div class="preloader">
-    <div class="loader-p"></div>
-</div>
-<!--==================== Preloader End ====================-->
-  <!--==================== Overlay Start ====================-->
-  <div class="body-overlay"></div>
-  <!--==================== Overlay End ====================-->
-
-  <!--==================== Sidebar Overlay End ====================-->
-  <div class="sidebar-overlay"></div>
-  <!--==================== Sidebar Overlay End ====================-->
-
-  <!-- ==================== Scroll to Top End Here ==================== -->
-  <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
-  <!-- ==================== Scroll to Top End Here ==================== -->
-<!-- ==================== Header Top Start Here ==================== -->
-<div class="header-top d-lg-block d-none">
-    <div class="container">
-        <div class="top-header-wrapper d-flex flex-wrap justify-content-between align-items-center">    
-            <div class="top-contact">
-                <ul class="contact-list">
-                    <li class="contact-list__item"> <span class="contact-list__item-icon"><i class="fas fa-envelope"></i></span><a href="mailto:" class="contact-list__link"> hello@example.com </a></li>
-                    <li class="contact-list__item"><span class="contact-list__item-icon"><i class="fas fa-phone"></i></span><a href="tel:" class="contact-list__link">  (406) 555 - 0120 - 1478 </a></li>
-                </ul>
-            </div> 
-            <div class="top-button d-flex flex-wrap justify-content-between align-items-center">
-                <ul class="login-registration-list d-flex flex-wrap justify-content-between align-items-center">
-                    <li class="login-registration-list__item"><span class="login-registration-list__icon"><i class="fas fa-user"></i></span><a href="#" class="login-registration-list__link"> Login</a></li>
-                    <li class="login-registration-list__item"><a href="#" class="login-registration-list__link"> Register</a></li>
-                </ul>
-                <div class="language-box">
-                    <select class="select">
-                        <option selected>English</option>
-                        <option value="1">Bangla</option>
-                        <option value="2">French</option>
-                        <option value="3">Spanish</option>
-                    </select>
+   
+<!--======================================================
+ --------- Header --------- 
+=======================================================-->
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="logo" class="main-logo">
+            </a>
+            <div class="d-flex align-items-center gap-4 order-1">
+                <div class="country__select dropdown">
+                    <button class="country__select_button" data-bs-toggle="dropdown" aria-expanded="false"
+                        id="countryDropdown">
+                        <img src="assets/images/country-logo/united-states.png" alt="country logo" class="img-flag"
+                            id="dropdownImage">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <img src="assets/images/country-logo/united-states.png" alt="country logo" class="img-flag"> EN
+                        </li>
+                        <li>
+                            <img src="assets/images/country-logo/united-kingdom.png" alt="country logo" class="img-flag"> UK
+                        </li>
+                        <li>
+                            <img src="assets/images/country-logo/germany.png" alt="country logo" class="img-flag"> GER
+                        </li>
+                        <li>
+                            <img src="assets/images/country-logo/canada.png" alt="country logo" class="img-flag"> CA
+                        </li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="login.html" class="btn btn--base">
+                        login
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="assets/images/logo/logo.png" alt="logo" class="main-logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- ==================== Header Top End Here ==================== -->
-<!-- ==================== Header Start Here ==================== -->
-<header class="header" id="header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
-            <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span id="hiddenNav"><i class="las la-bars"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-menu ms-auto align-items-lg-center">
-                    <li class="nav-item d-block d-lg-none">
-                        <div class="top-button d-flex flex-wrap justify-content-between align-items-center">
-                            <div class="language-box">
-                                <select class="select">
-                                    <option selected>English</option>
-                                    <option value="1">Bangla</option>
-                                    <option value="2">French</option>
-                                    <option value="3">Spanish</option>
-                                </select>
-                            </div>
-                            <ul class="login-registration-list d-flex flex-wrap align-items-center">
-                                <li class="login-registration-list__item"><a href="login.html" class="login-registration-list__link"><span class="login-registration-list__icon"><i class="fas fa-user"></i></span> Login</a></li>
-                                <li class="login-registration-list__item"><a href="registration.html" class="login-registration-list__link">Registration</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dashboard</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog <span class="nav-item__icon"><i class="las la-angle-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="blog.html">Blog</a></li>
-                            <li class="dropdown-menu__list"><a class="dropdown-item dropdown-menu__link" href="#">Blog Details</a>
-                            </li>
-                        </ul>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    </nav>
 </header>
-<!-- ==================== Header End Here ==================== -->
-
+<!--======================================================
+ --------- End Header --------- 
+=======================================================-->
 <main>
 
-    <!--========================== Banner Section Start ==========================-->
-<section class="banner-section bg-img" data-background-image="assets/images/thumbs/banner.jpg">
+    <!--======================================================
+ --------- Banner Section --------- 
+=======================================================-->
+<section class="banner-section ">
+    <div class="bg-shape1"></div>
+    <div class="bg-shape2"></div>
+    <div class="banner-shape bg-img" data-background-image="assets/images/shape/body_bg.png"></div>
+    <div class="start-shape">
+        <img src="assets/images/shape/star-1.png" alt="star shape">
+        <img src="assets/images/shape/star-1.png" alt="star shape">
+        <img src="assets/images/shape/star-2.png" alt="star shape">
+        <img src="assets/images/shape/star-2.png" alt="star shape"> 
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="banner-content">
+                    <div class="total-user">
+                        <a href=""><i class="fa-solid fa-play"></i></a>
+                         Total User 50,878
+                    </div>
+                    <h1>Advanced Adverts Network And Dual Success!</h1>
+                    <p>With a Unique Partner Care Approach.</p>
+                    <div class="banner-btn-group"> 
+                        <a href="" class="btn btn--border">Advertisers</a>
+                        <a href="" class="btn btn--base">Publishers</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</section>
+<!--======================================================
+ --------- End Banner Section --------- 
+=======================================================--> 
+    <!--======================================================
+ --------- Globe Section --------- 
+=======================================================-->
+<section class="globe-section ">
     <div class="container">
         <div class="row">
-            <button href="contact.html" class="btn btn--info">Contact Us</button>
+            <div class="col-lg-6 ">
+                <div id="globeCanvas"> </div>
+            </div>
             <div class="col-lg-6">
-                <div class="banner-content">
-                    <h1 class="banner-content__title">Got To The Powerful Money management</h1>
-                    <p class="banner-content__desc">Hyip is a bitcoin-driven internet-based speculation stage,
-                        explicitly overhauling the web-based venture local area.</p>
-                    <div class="banner-content__button d-flex align-items-center gap-3">
-
-                        <div class="counterup-item d-flex align-items-center">
-                            <div class="counterup-item__icon">
-                                <i class="icon-user-1"></i>
-                            </div>
-                            <div class="counterup-item__content">
-                                <div class="counterup-item__number">
-                                    <h4 class="counterup-item__title text-white mb-0"><span class="odometer"
-                                            data-odometer-final="35">20</span>M+</h4>
+                <div class="add-globe py-120">
+                    <img src="assets/images/ads/social-add.png" alt="ads images" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--======================================================
+ --------- End Globe Section --------- 
+=======================================================--> 
+    <!--======================================================
+ --------- Ads-formats Section --------- 
+=======================================================-->
+<section class="ads-formats-section pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section__title text-center">
+                    <span class="section__title__sub">Ads formats</span>
+                    <h2>We deliver high converting <br> ads and traffic</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row row-gap-4 mt-60">
+            <div class="col-lg-4 col-md-6">
+                <div class="ads-formats-content formats-left">
+                    <div class="ads-formats-box">
+                        <div class="number">
+                            01
+                        </div>
+                        <div class="text">
+                            <h4> Popunder Ads</h4>
+                            <p>Non-intrusive formats with great viewability, Popunders remain among the highest.</p>
+                        </div> 
+                    </div>
+                    <div class="ads-formats-box">
+                        <div class="number">
+                            02
+                        </div>
+                        <div class="text">
+                            <h4> Social Bar Ads</h4>
+                            <p>Non-intrusive formats with great viewability, Popunders remain among the highest.</p>
+                        </div> 
+                    </div>
+                    <div class="ads-formats-box">
+                        <div class="number">
+                            03
+                        </div>
+                        <div class="text">
+                            <h4> Direct Link Ads</h4>
+                            <p>Non-intrusive formats with great viewability, Popunders remain among the highest.</p>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-4"> </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="ads-formats-content formats-right">
+                    <div class="ads-formats-box">
+                        <div class="number">
+                            04
+                        </div>
+                        <div class="text">
+                            <h4> Native Banners Ads</h4>
+                            <p>Non-intrusive formats with great viewability, Popunders remain among the highest.</p>
+                        </div> 
+                    </div>
+                    <div class="ads-formats-box">
+                        <div class="number">
+                            05
+                        </div>
+                        <div class="text">
+                            <h4> Banners Ads</h4>
+                            <p>Non-intrusive formats with great viewability, Popunders remain among the highest.</p>
+                        </div> 
+                    </div>
+                    <div class="ads-formats-box">
+                        <div class="number">
+                            06
+                        </div>
+                        <div class="text">
+                            <h4> Single Text Ads</h4>
+                            <p>Non-intrusive formats with great viewability, Popunders remain among the highest.</p>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+<!--======================================================
+ --------- End Ads-formats Section --------- 
+=======================================================--> 
+    <!--======================================================
+ --------- Services Section --------- 
+=======================================================-->
+<section class="services-section pb-120 mt-5">
+    <div class="container">
+        <div class="row row-gap-5">
+            <div class="col-lg-12">
+                <div class="services-content">
+                    <div class="services-content-item">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="services-img">
+                                    <img src="assets/images/ads/social-add.png" alt="services images">
                                 </div>
-                                <span class="counterup-item__text text-white mb-0">Client in the world</span>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__title">
+                                    <div class="section__title__sub"><span>01</span> Popunder Ads</div>
+                                    <h3>Ads open in a new tab after users click anywhere.</h3>
+                                </div>
+                                <ul class="services-list">
+                                    <li>Popunders deliver ad offers directly to high-intent.</li>
+                                    <li>Adsterra serves 11.9B monthly pop impressions.</li>
+                                    <li>You can choose either CPM or CPA pricing model.</li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="services-content-item">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="services-img">
+                                    <img src="assets/images/ads/social-add.png" alt="services images">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__title">
+                                    <div class="section__title__sub"><span>02</span> Social Bar</div>
+                                    <h3>Ads open in a new tab after users click anywhere.</h3>
+                                </div>
+                                <ul class="services-list">
+                                    <li>Popunders deliver ad offers directly to high-intent.</li>
+                                    <li>Adsterra serves 11.9B monthly pop impressions.</li>
+                                    <li>You can choose either CPM or CPA pricing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-content-item">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="services-img">
+                                    <img src="assets/images/ads/social-add.png" alt="services images">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__title">
+                                    <div class="section__title__sub"><span>03</span> Direct Link</div>
+                                    <h3>Ads open in a new tab after users click anywhere.</h3>
+                                </div>
+                                <ul class="services-list">
+                                    <li>Popunders deliver ad offers directly to high-intent.</li>
+                                    <li>Adsterra serves 11.9B monthly pop impressions.</li>
+                                    <li>You can choose either CPM or CPA pricing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-content-item">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="services-img">
+                                    <img src="assets/images/ads/social-add.png" alt="services images">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__title">
+                                    <div class="section__title__sub"><span>04</span> Native Banners</div>
+                                    <h3>Ads open in a new tab after users click anywhere.</h3>
+                                </div>
+                                <ul class="services-list">
+                                    <li>Popunders deliver ad offers directly to high-intent.</li>
+                                    <li>Adsterra serves 11.9B monthly pop impressions.</li>
+                                    <li>You can choose either CPM or CPA pricing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-content-item">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="services-img">
+                                    <img src="assets/images/ads/social-add.png" alt="services images">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__title">
+                                    <div class="section__title__sub"><span>05</span> Banners Ads</div>
+                                    <h3>Ads open in a new tab after users click anywhere.</h3>
+                                </div>
+                                <ul class="services-list">
+                                    <li>Popunders deliver ad offers directly to high-intent.</li>
+                                    <li>Adsterra serves 11.9B monthly pop impressions.</li>
+                                    <li>You can choose either CPM or CPA pricing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-content-item">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="services-img">
+                                    <img src="assets/images/ads/social-add.png" alt="services images">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__title">
+                                    <div class="section__title__sub"><span>06</span> Single Text </div>
+                                    <h3>Ads open in a new tab after users click anywhere.</h3>
+                                </div>
+                                <ul class="services-list">
+                                    <li>Popunders deliver ad offers directly to high-intent.</li>
+                                    <li>Adsterra serves 11.9B monthly pop impressions.</li>
+                                    <li>You can choose either CPM or CPA pricing model.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--======================================================
+ --------- End Services Section --------- 
+=======================================================--> 
+    <!--======================================================
+ --------- Benefit Section --------- 
+=======================================================-->
+<section class="benefit-section pb-120">
+    <div class="section-shape bg-img" data-background-image="assets/images/shape/body_bg.png"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="section__title text-center">
+                    <span class="section__title__sub">Benefits</span>
+                    <h2>Who can benefits from the is AdsHunt ad network</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60 row-gap-4 justify-content-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <img src="assets/images/icons/advertisers.svg" alt="benefit images">
+                    </div>
+                    <h3>Advertisers</h3>
+                    <p>
+                        Adsterra is a powerful online advertising network for brands, agencies, and media buyers. With
+                        over 20 targeting settings, you deliver ads to the best-matching audiences. Unlock high-quality
+                        CPM, CPC, and CPA traffic from 35K+ direct publishers.
+                    </p>
+                    <a href="contact.html" class="btn btn--border">Explore More </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <img src="assets/images/icons/publishers.svg" alt="benefit images">
+                    </div>
+                    <h3>Publishers</h3>
+                    <p>
+                        Adsterra is a powerful online advertising network for brands, agencies, and media buyers. With
+                        over 20 targeting settings, you deliver ads to the best-matching audiences. Unlock high-quality
+                        CPM, CPC, and CPA traffic from 35K+ direct publishers.
+                    </p>
+                    <a href="contact.html" class="btn btn--base">Explore More  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--======================================================
+ --------- End Benefit Section --------- 
+=======================================================--> 
+    <!--======================================================
+ --------- Choose Section --------- 
+=======================================================-->
+<section class="choose-section pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="section__title text-center">
+                    <span class="section__title__sub">Choose Us</span>
+                    <h2>Why choose the leading online ad network</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60 row-gap-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="choose-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <div class="text">
+                        <h4>Unique Partner Care</h4>
+                        <p>Our Partner Care Standards go beyond just answering questions. In addition to high-competent
+                            support, we offer guidance on optimizing campaigns traffic. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="choose-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <div class="text">
+                        <h4>Unique Partner Care</h4>
+                        <p>Our Partner Care Standards go beyond just answering questions. In addition to high-competent
+                            support, we offer guidance on optimizing campaigns traffic. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="choose-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <div class="text">
+                        <h4>Unique Partner Care</h4>
+                        <p>Our Partner Care Standards go beyond just answering questions. In addition to high-competent
+                            support, we offer guidance on optimizing campaigns traffic. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="choose-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <div class="text">
+                        <h4>Unique Partner Care</h4>
+                        <p>Our Partner Care Standards go beyond just answering questions. In addition to high-competent
+                            support, we offer guidance on optimizing campaigns traffic. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="choose-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <div class="text">
+                        <h4>Unique Partner Care</h4>
+                        <p>Our Partner Care Standards go beyond just answering questions. In addition to high-competent
+                            support, we offer guidance on optimizing campaigns traffic. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="choose-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <div class="text">
+                        <h4>Unique Partner Care</h4>
+                        <p>Our Partner Care Standards go beyond just answering questions. In addition to high-competent
+                            support, we offer guidance on optimizing campaigns traffic. </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--========================== Banner Section End ==========================-->
-    <!--========================== Banner Section Start ==========================-->
-<section class="banner-section bg-img" data-background-image="assets/images/thumbs/banner.jpg">
+<!--======================================================
+ --------- End Choose Section --------- 
+=======================================================--> 
+    <!--======================================================
+ --------- Testimonial Section --------- 
+=======================================================-->
+<section class="testimonial-section pb-120">
     <div class="container">
-        <div class="row">
-            <button href="contact.html" class="btn btn--info">Contact Us</button>
-            <div class="col-lg-6">
-                <div class="banner-content">
-                    <h1 class="banner-content__title">Got To The Powerful Money management</h1>
-                    <p class="banner-content__desc">Hyip is a bitcoin-driven internet-based speculation stage,
-                        explicitly overhauling the web-based venture local area.</p>
-                    <div class="banner-content__button d-flex align-items-center gap-3">
-
-                        <div class="counterup-item d-flex align-items-center">
-                            <div class="counterup-item__icon">
-                                <i class="icon-user-1"></i>
-                            </div>
-                            <div class="counterup-item__content">
-                                <div class="counterup-item__number">
-                                    <h4 class="counterup-item__title text-white mb-0"><span class="odometer"
-                                            data-odometer-final="35">20</span>M+</h4>
+        <div class="row justify-content-between">
+            <div class="col-xl-5">
+                <div class="section__title">
+                    <span class="section__title__sub">Testimonial</span>
+                    <h2>Our partners’ trust is our core value</h2>
+                </div>
+                <div class="arrow-btns mt-60">
+                    <button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="testimonial-slide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-slide__item">
+                                <p>
+                                    "We have scaled up our business on the DSP side from 3x to 10x and ROI from 1x to 3x
+                                    with Adsterra. In the past two years, we've worked with all accessible ad types,
+                                    including Onclick ads (Popunder), In Page Push, Social Bar, and Native Banners on
+                                    CPA, CPM, and CPC. The efficiency of the CPA Goal paired with various traffic
+                                    sources enables us to achieve end KPI with cost efficiency."
+                                </p>
+                                <div class="user">
+                                    <img src="assets/images/user/user2.jpeg" alt="user1">
+                                    <div class="text">
+                                        <h5>John Doe</h5>
+                                        <span>Marketing Manager</span>
+                                    </div>
                                 </div>
-                                <span class="counterup-item__text text-white mb-0">Client in the world</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--========================== Banner Section End ==========================-->
-    
-    
-    
+<!--======================================================
+ --------- End Testimonial Section --------- 
+=======================================================--> 
+
 
 </main>
-<!-- Footer -->
-
-<!-- ==================== Footer Start Here ==================== -->
+<!--======================================================
+ --------- Footer --------- 
+=======================================================-->
 <footer class="footer-area">
-    <div class="pb-60 pt-120">
-        <div class="container">
-            <div class="row justify-content-center gy-5">
-                <div class="col-xl-4 col-sm-6 col-xsm-6">
-                    <div class="footer-item">
-                        <div class="footer-item__logo">
-                            <a href="index.html"> <img src="assets/images/logo/logo.png" alt=""></a>
+    <div class="container">
+        <div class="widget-wrapper">
+            <div class="row row-gap-5">
+                <div class="col-lg-4">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href="index.html"> <img src="assets/images/logo/logo.png" alt="logo"></a>
                         </div>
-                        <p class="footer-item__desc"> Herbal Shop  brings you tons of products in over 20+ different categories, including men's fashion, women's fashion, baby fashion, and more. </p>
+                        <div class="py-4">
+                            <p>AdsHunt helps you reach a broader audience by publishing your ads across a variety of
+                                websites</p>
+                        </div>
                         <ul class="social-list">
-                            <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link flex-center"><i class="fab fa-facebook-f"></i></a> </li>
-                            <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link flex-center active"> <i class="fab fa-twitter"></i></a></li>
-                            <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link flex-center"> <i class="fab fa-linkedin-in"></i></a></li>
-                            <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link flex-center"> <i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-sm-6 col-xsm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Userful Link</h5>
-                        <ul class="footer-menu">
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Home</a></li>
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">About Us </a></li>
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Contact Us </a></li>
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-xsm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Categories</h5>
-                        <ul class="footer-menu">
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog </a></li>
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog Details </a></li>
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Dashboard </a></li>
-                            <li class="footer-menu__item"><a href="#" class="footer-menu__link"> Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-xsm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Contact With Us</h5>
-                        <ul class="footer-contact-menu">
-                            <li class="footer-contact-menu__item"> 
-                                <div class="footer-contact-menu__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-contact-menu__item-content">
-                                    <p>15205 North Kierland Blvd.100
-                                      Old City House</p>
-                                </div>
+                            <li>
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
                             </li>
-                            <li class="footer-contact-menu__item"> 
-                                <div class="footer-contact-menu__item-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="footer-contact-menu__item-content">
-                                    <p>democompany@gmail.com</p>
-                                </div>
+                            <li>
+                                <a href="https://www.twitter.com"> <i class="fa-brands fa-x-twitter"></i></a>
                             </li>
-                            <li class="footer-contact-menu__item"> 
-                                <div class="footer-contact-menu__item-icon">
+                            <li>
+                                <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com"> <i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer-widget">
+                        <div class="footer-widget__item">
+                            <h4>Quick Links</h4>
+                            <ul class="widget-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget__item">
+                            <h4>Policy Links</h4>
+                            <ul class="widget-links">
+                                <li><a href="index.html">Privacy Policy</a></li>
+                                <li><a href="index.html">Terms of Service</a></li>
+                                <li><a href="index.html">Cookie Policy</a></li>
+                                <li><a href="index.html">Item Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget__item">
+                            <h4>Our Contacts</h4>
+                            <ul class="footer-contact-menu">
+                                <li>
                                     <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="footer-contact-menu__item-content">
-                                    <p>123 - 456 - 7890 </p>
-                                </div>
-                            </li>
-                        </ul>
+                                    <a href="tel:+1234567890">+1234567890</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:info@ads-hunt.com">info@ads-hunt.com</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a href="#">123 Main St, New York, NY 10001</a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-  <!-- Footer Top End-->
-  
-    <!-- bottom Footer -->
-    <div class="bottom-footer py-3">
-        <div class="container">
-            <div class="row gy-3">
                 <div class="col-md-12 text-center">
-                    <div class="bottom-footer-text text-white"> &copy; Copyright 2022 . All rights reserved.</div>
+                    <div class="bottom-footer-text text-white"> &copy; Copyright 2025 <a href="index.html">AdsHunt</a> .
+                        All rights reserved.</div>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- ==================== Footer End Here ==================== -->
-  
+<!--======================================================
+ --------- End Footer --------- 
+=======================================================-->
+    
+    <!-- Three js -->
+    <script src="assets/js/three.min.js"></script>
+    <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Gsap ui js -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script> 
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script> 
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.min.js"></script> 
+    <!-- Globe -->   
+    <script src="assets/js/globe.js"></script>
 
-<!-- Jquery js -->
-<script src="assets/js/jquery-3.7.1.min.js"></script>
-<!-- Bootstrap Bundle Js -->
-<script src="assets/js/boostrap.bundle.min.js"></script>
-<!-- Slick js -->
-<script src="assets/js/slick.min.js"></script>
-<!-- Odometer js -->
-<script src="assets/js/odometer.min.js"></script>
-<!-- Viewport js -->
-<script src="assets/js/viewport.jquery.js"></script>
-
- <!-- main js -->
- <script src="assets/js/main.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
