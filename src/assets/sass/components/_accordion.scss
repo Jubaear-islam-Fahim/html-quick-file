@@ -7,6 +7,10 @@
     background-color: transparent !important;
     border-radius: 5px;
     overflow: hidden;
+    border: 2px solid hsl(var(--border-color) / 0.1); 
+    border-radius: 10px;
+    background: hsl(var(--black)/.05); 
+    backdrop-filter: blur(10px);
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -16,7 +20,7 @@
   }
   .accordion-body {
     padding: 20px;
-    background-color: hsl(var(--section-bg));
+    background-color: hsl(var(--border-color)/.05);
     .text {
       max-width: 60%;
       @include msm-screen {
@@ -30,11 +34,11 @@
   &:last-of-type .accordion-button.collapsed {
     border-radius: 5px;
   }
-  .accordion-button {
-    background-color: hsl(var(--section-bg));
+  .accordion-button { 
     color: var(--heading-color);
-    @include fs-18;
-    padding: 15px;
+    @include fs-20;
+    padding: 26px 20px;
+    background: hsl(var(--black)/.05); 
     @include msm-screen {
       padding: 13px;
       padding-right: 30px;
@@ -47,7 +51,7 @@
     }
     &:not(.collapsed) {
       color: hsl(var(--white));
-      background-color: hsl(var(--black)) !important;
+      background-color: hsl(var(--black)/.4) !important;
       box-shadow: none;
       &::after {
         background-image: none;
@@ -57,9 +61,9 @@
     &[aria-expanded='true'],
     &[aria-expanded='false'] {
       &::after {
-        font-family: 'Line Awesome Free';
+        font-family: "Font Awesome 6 free";
         font-weight: 900;
-        content: '\f068';
+        content: "\f078";
         display: inline-block;
         position: absolute;
         @extend .top-center-extend;
@@ -69,7 +73,7 @@
     }
     &[aria-expanded='false'] {
       &::after {
-        content: '\f067';
+        content: "\f078";
         color: hsl(var(--body-color));
       }
     }
